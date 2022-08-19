@@ -14,13 +14,22 @@
         android:theme="@style/Theme.Keys_Shop"
         tools:targetApi="31">
         <activity
+            android:name=".FourthItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ThirdItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SecondItemActivity"
+            android:exported="false" />
+        <activity
             android:name=".FirstItemActivity"
             android:exported="false" />
         <activity
             android:name=".KeysListActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

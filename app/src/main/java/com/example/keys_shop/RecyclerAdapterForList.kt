@@ -1,4 +1,4 @@
-package com.example.catalog
+package com.example.keys_shop
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,18 +7,14 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
-import com.example.keys_shop.R
 
 class RecyclerAdapterForList(
     private val namesOfGame: Array<String>,
     private val pricesOfKey: Array<String>
 ) : RecyclerView.Adapter<RecyclerAdapterForList.ViewHolder>() {
     var onClickListener: ((Int) -> Unit)? = null
-    private var imagesOfGame =
-        intArrayOf(
-            R.drawable.gta5, R.drawable.gta5, R.drawable.gta5,
-            R.drawable.gta5
-        )
+    private var imagesOfGame = intArrayOf(R.drawable.gta5, R.drawable.er, R.drawable.minecraft,
+        R.drawable.cofd)
 
     override fun getItemCount(): Int {
         return namesOfGame.size
